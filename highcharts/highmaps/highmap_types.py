@@ -28,8 +28,11 @@ PLOT_OPTION_ALLOWED_ARGS = {
     "xAxis": [int, basestring],
     "yAxis": [int, basestring],
     "zIndex": int,
-    },  "heatmap": {
+    },
+  "heatmap": {
     "allowPointSelect": bool,
+    "boostBlending": basestring,
+    "boostThreshold": int,
     "borderColor": (ColorObject, basestring, dict),
     "borderWidth": [int, float, basestring],
     "colsize": int,
@@ -42,6 +45,8 @@ PLOT_OPTION_ALLOWED_ARGS = {
   "map": {
     "allAreas": bool,
     "allowPointSelect": bool,
+    "boostBlending": basestring,
+    "boostThreshold": int,
     "borderColor": (ColorObject, basestring, dict),
     "borderWidth": [int, float, basestring],
     "dashStyle": basestring,  
@@ -54,6 +59,8 @@ PLOT_OPTION_ALLOWED_ARGS = {
   "mapbubble": {
     "allAreas": bool,
     "allowPointSelect": bool,
+    "boostBlending": basestring,
+    "boostThreshold": int,
     "borderColor": (ColorObject, basestring, dict),
     "borderWidth": [int, float, basestring],
     "displayNegative": bool, 
@@ -72,6 +79,8 @@ PLOT_OPTION_ALLOWED_ARGS = {
   "mapline": {
     "allAreas": bool,
     "allowPointSelect": bool,
+    "boostBlending": basestring,
+    "boostThreshold": int,
     "dashStyle": basestring,
     "fillColor": (ColorObject, basestring, dict),
     "joinBy": [basestring, list],
@@ -88,6 +97,8 @@ PLOT_OPTION_ALLOWED_ARGS = {
     "zThreshold": [int, float],
   },
   "mappoint": {
+    "boostBlending": basestring,
+    "boostThreshold": int,
     "legendIndex": [int, float],
     "mapData": (MapObject, list, basestring),
   },

@@ -35,6 +35,8 @@ PLOT_OPTION_ALLOWED_ARGS = {
     "zones": (Zones, dict),
     },
   "area": {
+    "boostBlending": basestring,
+    "boostThreshold": int,
     "compare": basestring,
     "connectNulls": bool,
     "cropThreshold": int,
@@ -61,6 +63,8 @@ PLOT_OPTION_ALLOWED_ARGS = {
     "turboThreshold": int,
   },
   "arearange": {
+    "boostBlending": basestring,
+    "boostThreshold": int,
     "compare": basestring,
     "connectNulls": bool,
     "cropThreshold": int,
@@ -82,6 +86,8 @@ PLOT_OPTION_ALLOWED_ARGS = {
     "turboThreshold": int,
   },
   "areaspline": {
+    "boostBlending": basestring,
+    "boostThreshold": int,
     "cropThreshold": int,
     "compare": basestring,
     "connectNulls": bool,
@@ -107,6 +113,8 @@ PLOT_OPTION_ALLOWED_ARGS = {
     "trackByArea": bool,
   },
   "areasplinerange": {
+    "boostBlending": basestring,
+    "boostThreshold": int,
     "cropThreshold": int,
     "compare": basestring,
     "connectNulls": bool,
@@ -132,6 +140,8 @@ PLOT_OPTION_ALLOWED_ARGS = {
     "trackByArea": bool, 
   },
   "candlestick": {
+    "boostBlending": basestring,
+    "boostThreshold": int,
     "colors": list,
     "cropThreshold": int,
     "connectNulls": bool,
@@ -161,6 +171,8 @@ PLOT_OPTION_ALLOWED_ARGS = {
     "trackByArea": bool, 
   },
   "column": {
+    "boostBlending": basestring,
+    "boostThreshold": int,
     "borderColor": (ColorObject, basestring, dict),
     "borderRadius": int,
     "borderWidth": [int, basestring],
@@ -186,6 +198,8 @@ PLOT_OPTION_ALLOWED_ARGS = {
     "turboThreshold": int,
   },
   "columnrange": {
+    "boostBlending": basestring,
+    "boostThreshold": int,
     "borderColor": (ColorObject, basestring, dict),
     "borderRadius": int,
     "borderWidth": [int, basestring],
@@ -212,6 +226,8 @@ PLOT_OPTION_ALLOWED_ARGS = {
   },
   "flags": {
     "allowOverlapX": bool,
+    "boostBlending": basestring,
+    "boostThreshold": int,
     "colors": list,
     "cropThreshold": int,
     "keys": list,
@@ -230,6 +246,8 @@ PLOT_OPTION_ALLOWED_ARGS = {
     "useHTML": bool,
   },
   "line": {
+    "boostBlending": basestring,
+    "boostThreshold": int,
     "compare": basestring,
     "connectNulls": bool,
     "cropThreshold": int,
@@ -252,6 +270,8 @@ PLOT_OPTION_ALLOWED_ARGS = {
     "turboThreshold": int,
   },
   "ohlc": {
+    "boostBlending": basestring,
+    "boostThreshold": int,
     "colorByPoint": bool,
     "colors": list,
     "compare": basestring,
@@ -275,7 +295,9 @@ PLOT_OPTION_ALLOWED_ARGS = {
     "stacking": basestring,
     "turboThreshold": int,
   },
-   "polygon": {
+  "polygon": {
+    "boostBlending": basestring,
+    "boostThreshold": int,
     "compare": basestring,
     "cropThreshold": int,
     "dashStyle": basestring,
@@ -292,7 +314,9 @@ PLOT_OPTION_ALLOWED_ARGS = {
     "stacking": basestring,
     "turboThreshold": int,
   },
-    "scatter": {
+  "scatter": {
+    "boostBlending": basestring,
+    "boostThreshold": int,
     "compare": basestring,
     "cropThreshold": int,
     "dashStyle": basestring,
@@ -312,6 +336,8 @@ PLOT_OPTION_ALLOWED_ARGS = {
     "turboThreshold": int,
   },
   "series": {
+    "boostBlending": basestring,
+    "boostThreshold": int,
     "compare": basestring,
     "connectNulls": bool,
     "cropThreshold": int,
@@ -332,6 +358,8 @@ PLOT_OPTION_ALLOWED_ARGS = {
     "turboThreshold": int,
   },
   "spline": {
+    "boostBlending": basestring,
+    "boostThreshold": int,
     "compare": basestring,
     "connectNulls": bool,
     "cropThreshold": int,
@@ -353,6 +381,8 @@ PLOT_OPTION_ALLOWED_ARGS = {
   },
   "sma": {
     "allowPointSelect": bool,
+    "boostBlending": basestring,
+    "boostThreshold": int,
     "borderWidth": [int, basestring],
     "connectEnds": bool,
     "connectNulls": bool,
