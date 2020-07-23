@@ -147,7 +147,8 @@ class SeriesOptions(object):
 
     def __init__(self, series_type="map", suppress_errors=False, **kwargs):
         self.load_defaults(series_type)
-        self.process_kwargs(kwargs, series_type=series_type, suppress_errors=suppress_errors)
+        self.suppress_errors = suppress_errors
+        self.process_kwargs(kwargs, series_type=series_type)
 
     @staticmethod
     def __validate_options__(k, v, ov):
@@ -221,11 +222,11 @@ class SeriesOptions(object):
                         self.__dict__.update({k:v})
             else: 
                 print(k,v)
-                if not suppress_errors:
+                if not self.suppress_errors:
                     raise OptionTypeError("Option Type Mismatch: Expected: %s" % allowed_args[k])
                 
 
-    def process_kwargs(self, kwargs, series_type, suppress_errors=False):
+    def process_kwargs(self, kwargs, series_type):
         allowed_args = PLOT_OPTION_ALLOWED_ARGS[series_type]
         allowed_args.update(PLOT_OPTION_ALLOWED_ARGS["common"])
 
@@ -252,7 +253,7 @@ class SeriesOptions(object):
                         self.__dict__.update({k:v})          
                 else: 
                     print(k,v)
-                    if not suppress_errors:
+                    if not self.suppress_errors:
                         raise OptionTypeError("Option Type Mismatch: Expected: %s" % allowed_args[k])
 
     def load_defaults(self, series_type):
