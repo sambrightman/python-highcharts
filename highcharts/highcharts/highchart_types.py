@@ -544,9 +544,9 @@ class OptionTypeError(Exception):
 class SeriesOptions(object):
     """Class for plotOptions"""
 
-    def __init__(self,series_type="line",supress_errors=False,**kwargs):
+    def __init__(self,series_type="line",suppress_errors=False,**kwargs):
         self.load_defaults(series_type)
-        self.process_kwargs(kwargs,series_type=series_type,supress_errors=supress_errors)
+        self.process_kwargs(kwargs,series_type=series_type,suppress_errors=suppress_errors)
 
     @staticmethod
     def __validate_options__(k,v,ov):
@@ -616,10 +616,11 @@ class SeriesOptions(object):
                         self.__dict__.update({k:v})
             else: 
                 print(k,v)
-                if not supress_errors: raise OptionTypeError("Option Type Mismatch: Expected: %s" % allowed_args[k])
+                if not suppress_errors:
+                    raise OptionTypeError("Option Type Mismatch: Expected: %s" % allowed_args[k])
                 
 
-    def process_kwargs(self,kwargs,series_type,supress_errors=False):
+    def process_kwargs(self,kwargs,series_type,suppress_errors=False):
         allowed_args = PLOT_OPTION_ALLOWED_ARGS[series_type]
         allowed_args.update(PLOT_OPTION_ALLOWED_ARGS["common"])
 
@@ -646,7 +647,8 @@ class SeriesOptions(object):
                         self.__dict__.update({k:v})          
                 else: 
                     print(k,v)
-                    if not supress_errors: raise OptionTypeError("Option Type Mismatch: Expected: %s" % allowed_args[k])
+                    if not suppress_errors:
+                        raise OptionTypeError("Option Type Mismatch: Expected: %s" % allowed_args[k])
            
 
     def load_defaults(self,series_type): # not in use
@@ -662,7 +664,7 @@ class SeriesOptions(object):
 class Series(object):
     """Series class for input data """
 
-    def __init__(self, data, series_type="line", supress_errors=False, **kwargs):
+    def __init__(self, data, series_type="line", suppress_errors=False, **kwargs):
 
         # List of dictionaries. Each dict contains data and properties, 
         # which need to handle before construct the object for series 
@@ -705,7 +707,8 @@ class Series(object):
                     else:
                         self.__dict__.update({k:v})
                 else: 
-                    if not supress_errors: raise OptionTypeError("Option Type Mismatch: Expected: %s" % DATA_SERIES_ALLOWED_OPTIONS[k])
+                    if not suppress_errors:
+                        raise OptionTypeError("Option Type Mismatch: Expected: %s" % DATA_SERIES_ALLOWED_OPTIONS[k])
             
 
     def __options__(self):
