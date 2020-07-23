@@ -109,6 +109,15 @@ class BaseOptions(object):
             return True
 
 
+class BoostOptions(BaseOptions):
+    ALLOWED_OPTIONS = {
+        "allowForce": bool,
+        "debug": dict,
+        "enabled": bool,
+        "seriesThreshold": int,
+        "useGPUTranslations": bool,
+    }
+
 class ChartOptions(BaseOptions):
     ALLOWED_OPTIONS = {
         "animation": [bool, dict, basestring],
