@@ -66,6 +66,7 @@ class Highstock(object):
                 'https://code.highcharts.com/stock/highstock.js',
                 'https://code.highcharts.com/stock/modules/exporting.js',
                 'https://code.highcharts.com/highcharts-more.js',
+                'https://code.highcharts.com/modules/boost.js',  # should always be last
             ]
 
         # set CSS src

@@ -70,7 +70,8 @@ class Highmap(object):
                 'https://code.highcharts.com/highcharts.js',
                 'https://code.highcharts.com/maps/modules/map.js',
                 'https://code.highcharts.com/maps/modules/data.js',
-                'https://code.highcharts.com/maps/modules/exporting.js'
+                'https://code.highcharts.com/maps/modules/exporting.js',
+                'https://code.highcharts.com/modules/boost.js',  # should always be last
             ]
 
         # set CSS src

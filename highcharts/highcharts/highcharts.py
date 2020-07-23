@@ -72,7 +72,8 @@ class Highchart(object):
                 'https://code.highcharts.com/highcharts-more.js',
                 'https://code.highcharts.com/modules/heatmap.js',
                 'https://code.highcharts.com/modules/wordcloud.js',
-                'https://code.highcharts.com/modules/exporting.js'
+                'https://code.highcharts.com/modules/exporting.js',
+                'https://code.highcharts.com/modules/boost.js',  # should always be last
             ]
 
         # set CSS src
