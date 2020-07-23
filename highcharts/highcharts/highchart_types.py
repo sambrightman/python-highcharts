@@ -34,6 +34,8 @@ PLOT_OPTION_ALLOWED_ARGS = {
     },
   "area": {
     "allowPointSelect": bool,
+    "boostBlending": basestring,
+    "boostThreshold": int,
     "connectEnds": bool,
     "connectNulls": bool,
     "cropThreshold": int,
@@ -62,6 +64,8 @@ PLOT_OPTION_ALLOWED_ARGS = {
   },
   "arearange": {
     "allowPointSelect": bool,
+    "boostBlending": basestring,
+    "boostThreshold": int,
     "connectNulls": bool,
     "cropThreshold": int,
     "dashStyle": basestring,
@@ -85,6 +89,8 @@ PLOT_OPTION_ALLOWED_ARGS = {
   },
   "areaspline": {
     "allowPointSelect": bool,
+    "boostBlending": basestring,
+    "boostThreshold": int,
     "cropThreshold": int,
     "connectEnds": bool,
     "connectNulls": bool,
@@ -113,6 +119,8 @@ PLOT_OPTION_ALLOWED_ARGS = {
   },
   "areasplinerange": {
     "allowPointSelect": bool,
+    "boostBlending": basestring,
+    "boostThreshold": int,
     "connectNulls": bool,
     "cropThreshold": int,
     "dashStyle": basestring,
@@ -129,6 +137,8 @@ PLOT_OPTION_ALLOWED_ARGS = {
   },
   "bar": {
     "allowPointSelect": bool,
+    "boostBlending": basestring,
+    "boostThreshold": int,
     "borderColor": (ColorObject, basestring, dict),
     "borderRadius": int,
     "borderWidth": [int, basestring],
@@ -160,6 +170,8 @@ PLOT_OPTION_ALLOWED_ARGS = {
   },
   "boxplot": {
     "allowPointSelect": bool,
+    "boostBlending": basestring,
+    "boostThreshold": int,
     "colorByPoint": bool,
     "colors": list,
     "depth": [int, float],
@@ -191,6 +203,8 @@ PLOT_OPTION_ALLOWED_ARGS = {
   },
   "bubble": {
     "allowPointSelect": bool,
+    "boostBlending": basestring,
+    "boostThreshold": int,
     "borderColor": (ColorObject, basestring, dict),
     "borderRadius": int,
     "borderWidth": int,
@@ -222,6 +236,8 @@ PLOT_OPTION_ALLOWED_ARGS = {
   },
   "column": {
     "allowPointSelect": bool,
+    "boostBlending": basestring,
+    "boostThreshold": int,
     "borderColor": (ColorObject, basestring, dict),
     "borderRadius": int,
     "borderWidth": [int, basestring],
@@ -255,6 +271,8 @@ PLOT_OPTION_ALLOWED_ARGS = {
   },
   "columnrange": {
     "allowPointSelect": bool,
+    "boostBlending": basestring,
+    "boostThreshold": int,
     "borderColor": (ColorObject, basestring, dict),
     "borderRadius": int,
     "borderWidth": [int, basestring],
@@ -288,6 +306,8 @@ PLOT_OPTION_ALLOWED_ARGS = {
   },
   "errorbar": {
     "allowPointSelect": bool,
+    "boostBlending": basestring,
+    "boostThreshold": int,
     "colors": list,
     "colorByPoint": bool,
     "cursor": basestring,
@@ -318,6 +338,7 @@ PLOT_OPTION_ALLOWED_ARGS = {
     "whiskerWidth": [float, int]
   },
   "gauge": {
+    "boostBlending": basestring,
     "dial": NotImplemented,
     "linkedTo": basestring,
     "negativeColor": (ColorObject, basestring, dict),
@@ -329,6 +350,8 @@ PLOT_OPTION_ALLOWED_ARGS = {
   },
   "heatmap": {
     "allowPointSelect": bool,
+    "boostBlending": basestring,
+    "boostThreshold": int,
     "borderColor": (ColorObject, basestring, dict),
     "borderRadius": int,
     "borderWidth": [int, basestring],
@@ -347,6 +370,8 @@ PLOT_OPTION_ALLOWED_ARGS = {
   },
   "line": {
     "allowPointSelect": bool,
+    "boostBlending": basestring,
+    "boostThreshold": int,
     "connectEnds": bool,
     "connectNulls": bool,
     "cropThreshold": int,
@@ -370,6 +395,7 @@ PLOT_OPTION_ALLOWED_ARGS = {
   },
   "pie": {
     "allowPointSelect": bool,
+    "boostBlending": basestring,
     "borderColor": (ColorObject, basestring, dict),
     "borderWidth": [int, basestring],
     "center": list,
@@ -389,6 +415,8 @@ PLOT_OPTION_ALLOWED_ARGS = {
   },
   "scatter": {
     "allowPointSelect": bool,
+    "boostBlending": basestring,
+    "boostThreshold": int,
     "colorByPoint": bool,
     "cropThreshold": int,
     "dashStyle": basestring,
@@ -408,6 +436,8 @@ PLOT_OPTION_ALLOWED_ARGS = {
   },
   "series": {
     "allowPointSelect": bool,
+    "boostBlending": basestring,
+    "boostThreshold": int,
     "borderWidth": [int, basestring],
     "connectEnds": bool,
     "connectNulls": bool,
@@ -424,6 +454,8 @@ PLOT_OPTION_ALLOWED_ARGS = {
   },
   "spline": {
     "allowPointSelect": bool,
+    "boostBlending": basestring,
+    "boostThreshold": int,
     "connectEnds": bool,
     "connectNulls": bool,
     "cropThreshold": int,
@@ -442,6 +474,8 @@ PLOT_OPTION_ALLOWED_ARGS = {
     "allowDrillToNode": bool,
     "allowPointSelect": bool,
     "alternateStartingDirection": bool,
+    "boostBlending": basestring,
+    "boostThreshold": int,
     "borderColor": (ColorObject, basestring, dict),
     "borderWidth": [int, basestring],
     "colors": list,

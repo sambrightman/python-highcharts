@@ -14,7 +14,7 @@ import re
 import datetime
 import html
 from collections import Iterable
-from .options import BaseOptions, ChartOptions, \
+from .options import BaseOptions, BoostOptions, ChartOptions, \
     ColorsOptions, ColorAxisOptions, CreditsOptions, DrilldownOptions, ExportingOptions, \
     GlobalOptions, LabelsOptions, LangOptions, \
     LegendOptions, LoadingOptions, MapNavigationOptions, NavigationOptions, PaneOptions, \
@@ -70,7 +70,8 @@ class Highmap(object):
                 'https://code.highcharts.com/highcharts.js',
                 'https://code.highcharts.com/maps/modules/map.js',
                 'https://code.highcharts.com/maps/modules/data.js',
-                'https://code.highcharts.com/maps/modules/exporting.js'
+                'https://code.highcharts.com/maps/modules/exporting.js',
+                'https://code.highcharts.com/modules/boost.js',  # should always be last
             ]
 
         # set CSS src
@@ -121,6 +122,7 @@ class Highmap(object):
 
         # Bind Base Classes to self
         self.options = {
+            "boost": BoostOptions(),
             "chart": ChartOptions(),
             #"colorAxis": # cannot input until there is data, do it later
             "colors": ColorsOptions(),
