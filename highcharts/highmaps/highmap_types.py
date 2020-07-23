@@ -39,6 +39,7 @@ PLOT_OPTION_ALLOWED_ARGS = {
     "legendIndex": [int, float],
     "rowsize": int,
     "mapData": (MapObject, list, basestring),
+    "negativeColor": (ColorObject, basestring, dict),
     "nullColor": (ColorObject, basestring, dict),
     "shadow": [bool, dict], #shadow object
   },
@@ -53,6 +54,7 @@ PLOT_OPTION_ALLOWED_ARGS = {
     "joinBy": [basestring, list],
     "legendIndex": [int, float],
     "mapData": (MapObject, list, basestring),
+    "negativeColor": (ColorObject, basestring, dict),
     "nullColor": (ColorObject, basestring, dict),
     "shadow": [bool, dict],
   },
@@ -69,7 +71,6 @@ PLOT_OPTION_ALLOWED_ARGS = {
     "mapData": (MapObject, list, basestring),
     "maxSize": [basestring, int],
     "minSize": [basestring, int],
-    "negativeColor": (ColorObject, basestring, dict),
     "shadow": [bool, dict],
     "sizeBy": basestring,
     "zMax": int,
@@ -101,6 +102,7 @@ PLOT_OPTION_ALLOWED_ARGS = {
     "boostThreshold": int,
     "legendIndex": [int, float],
     "mapData": (MapObject, list, basestring),
+    "negativeColor": (ColorObject, basestring, dict),
   },
 }
 
