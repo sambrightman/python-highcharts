@@ -140,6 +140,8 @@ class ChartOptions(BaseOptions):
         "marginRight": int,
         "marginTop": int,
         "options3d": (Options3d, dict), 
+        "panning": [bool, dict],
+        "panKey": basestring,
         "plotBackgroundColor": (ColorObject, basestring, dict),
         "plotBackgroundImage": basestring,
         "plotBorderColor": (ColorObject, basestring, dict),
