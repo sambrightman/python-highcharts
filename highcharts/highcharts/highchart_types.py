@@ -554,9 +554,9 @@ class SeriesOptions(object):
         if isinstance(ov,list):
             if isinstance(v,tuple(ov)): return True
             else:
-                raise OptionTypeError("Option Type Currently Not Supported: %s" % k)
+                raise OptionTypeError("Option Type Currently Not Supported: %s" % (k,))
         else:
-          if ov == NotImplemented: raise OptionTypeError("Option Type Currently Not Supported: %s" % k)
+          if ov == NotImplemented: raise OptionTypeError("Option Type Currently Not Supported: %s" % (k,))
           if isinstance(v,ov): return True
           else: return False
 
@@ -649,7 +649,7 @@ class SeriesOptions(object):
                 else: 
                     print(k,v)
                     if not self.suppress_errors:
-                        raise OptionTypeError("Option Type Mismatch: Expected: %s" % allowed_args[k])
+                        raise OptionTypeError("Option Type Mismatch: Expected: %s" % (allowed_args[k],))
            
 
     def load_defaults(self,series_type): # not in use
@@ -709,7 +709,7 @@ class Series(object):
                         self.__dict__.update({k:v})
                 else: 
                     if not suppress_errors:
-                        raise OptionTypeError("Option Type Mismatch: Expected: %s" % DATA_SERIES_ALLOWED_OPTIONS[k])
+                        raise OptionTypeError("Option Type Mismatch: Expected: %s" % (DATA_SERIES_ALLOWED_OPTIONS[k],))
             
 
     def __options__(self):
