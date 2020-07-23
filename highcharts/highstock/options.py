@@ -118,6 +118,7 @@ class BoostOptions(BaseOptions):
         "enabled": bool,
         "seriesThreshold": int,
         "useGPUTranslations": bool,
+        "usePreallocated": bool,
     }
 
 class ChartOptions(BaseOptions):
