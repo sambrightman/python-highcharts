@@ -31,7 +31,7 @@
 
             $.getJSON({{data_url}}, function ({{chart.jsonp_data}})
             {
-                chart.addSeries({{chart.data_list[loop.index0]}});
+                chart.addSeries({{chart.data_list[loop.index0]}}, false);
             });
 
           {% endfor %}
@@ -40,10 +40,11 @@
             var data = {{chart.data}};
             var dataLen = data.length;
             for (var ix = 0; ix < dataLen; ix++) {
-                chart.addSeries(data[ix]);
+                chart.addSeries(data[ix], false);
             }
 
         {% endif %} 
+        chart.redraw();
 
 {% endblock body_content %}
 
